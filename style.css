@@ -82,6 +82,11 @@ a{
     transition: 0.3s;
 }
 
+.airlines-list{
+    padding-top: 10vh;
+    width: 70%;
+}
+
 .white:hover{
     position: relative;
     padding-left: 10px;

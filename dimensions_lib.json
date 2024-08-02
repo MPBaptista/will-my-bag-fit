@@ -1,0 +1,29 @@
+[
+    {
+        "airline": "Easy Jet",
+        "dimensions": {
+            "unit": "cm",
+            "height": 45,
+            "width": 36,
+            "depth": 20
+        }
+    },
+    {
+        "airline": "Ryanair",
+        "dimensions": {
+            "unit": "cm",
+            "height": 40,
+            "width": 20,
+            "depth": 25
+        }
+    },
+    {
+        "airline": "TAP",
+        "dimensions": {
+            "unit": "cm",
+            "height": 55,
+            "width": 40,
+            "depth": 25
+        }
+    }
+]
