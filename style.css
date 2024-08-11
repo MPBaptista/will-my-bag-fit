@@ -99,6 +99,18 @@ a{
     color: #fff; /* Text color */
 }
 
+.custom-input {
+    width: calc(100% - 70px); /* Subtract label width and margin from input width */
+    max-width: 100px;
+    padding: 13px;
+    margin: 5px 0;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    border: 1px solid #7A7C80; /* Add a border to input boxes */
+    border-radius: 4px; /* Optional: adds a slight border radius */
+    background-color: #1c1e20; /* Background color of the input */
+    color: #fff; /* Text color */
+}
+
 /* animations / utilities */
 .section-2 a:hover{
     font-size: 1.3rem;
@@ -117,12 +129,26 @@ a{
     padding-top: 1vh;
     padding-left: 5vh;
     padding-right: 5vh;
+    padding-bottom: 100px;
     width: 100%;
+}
+
+#airlines-list li{
+    padding: 3px;
 }
 
 .white:hover{
     position: relative;
     padding-left: 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
 }
 
 /* media queres */
