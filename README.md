@@ -8,7 +8,7 @@
 ## How it Works
 - Select the unit of measurement (cm or in)
 - Enter your bag's dimensions in the input fields
-- Chej«kc the list of compatible airlines
+- Check the list of compatible airlines
 - Use the search bar to filter the results by airline name
 
 ## Limitations
