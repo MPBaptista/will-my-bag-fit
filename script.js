@@ -5,6 +5,7 @@ function toggleUnits() {
     var heightInput = document.getElementById("height");
     var widthInput = document.getElementById("width");
     var depthInput = document.getElementById("depth");
+    
 
     if (selectedUnit === "in") {
         var heightValue = convertInchesToCentimeters(heightInput.value);
@@ -15,7 +16,10 @@ function toggleUnits() {
         var widthValue = parseFloat(widthInput.value).toFixed(2);
         var depthValue = parseFloat(depthInput.value).toFixed(2);
     }
-
+    // Check if all input values are 0.0
+    if (heightValue === "0.0" || widthValue === "0.0" || depthValue === "0.0") {
+        return; // Exit the function if all input values are 0.0
+    }
     calculateCompatibleAirlinesFromJSON(heightValue, widthValue, depthValue)
         .then(compatibleAirlines => renderAirlineList(compatibleAirlines, selectedUnit));
 }
@@ -47,6 +51,7 @@ function calculateCompatibleAirlinesFromJSON(height, width, depth) {
 function renderAirlineList(compatibleAirlines, selectedUnit) {
     var airlinesList = document.getElementById("airlines-list");
     airlinesList.innerHTML = "";
+    
     compatibleAirlines.forEach(function(airline) {
         var airlineItem = document.createElement("li");
         if (selectedUnit === "in") {
@@ -57,4 +62,35 @@ function renderAirlineList(compatibleAirlines, selectedUnit) {
         }
         airlinesList.appendChild(airlineItem);
     });
+
+    if (compatibleAirlines.length > 0) {
+        var searchInput = document.createElement("input");
+        searchInput.type = "text";
+        searchInput.id = "search";
+        searchInput.placeholder = "Search airlines...";
+        searchInput.className = "custom-input";
+        searchInput.onkeyup = filterAirlines;
+        
+        var searchContainer = document.createElement("div");
+        searchContainer.appendChild(searchInput);
+        
+        airlinesList.insertBefore(searchContainer, airlinesList.firstChild);
+    }
+}
+
+function filterAirlines() {
+    var searchInput = document.getElementById("search");
+    var airlinesList = document.getElementById("airlines-list");
+    var airlines = airlinesList.getElementsByTagName("li");
+
+    for (var i = 0; i < airlines.length; i++) {
+        var airlineName = airlines[i].textContent.toUpperCase();
+        var searchTerm = searchInput.value.toUpperCase();
+
+        if (airlineName.indexOf(searchTerm) > -1) {
+            airlines[i].style.display = "";
+        } else {
+            airlines[i].style.display = "none";
+        }
+    }
 }

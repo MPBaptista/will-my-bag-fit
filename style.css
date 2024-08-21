@@ -1,6 +1,11 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .grid-2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -12,7 +17,6 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #101214;
     color: #7A7C80;
-
 }
 
 h2,.white{
@@ -47,7 +51,7 @@ a{
 /* section 2 */
 .section-2{
     padding-top: 10vh;
-    width: 70%;
+    width: 100%;
 }
 
 .section-2 h2{
@@ -68,6 +72,50 @@ a{
     padding-left: 0;
     width: 100px;
 }
+
+.section-2 select {
+    width: 10%;
+    max-width: 400px;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #7A7C80;
+    border-radius: 4px;
+    background-color: #1c1e20;
+    color: #fff;
+}
+
+.section-2 label {
+    display: inline-block;
+    width: 70px; /* Fixed width to ensure consistent alignment */
+    text-align: right; /* Align label text to the right */
+    margin-right: 10px; /* Space between label and input */
+}
+
+.section-2 input {
+    width: calc(100% - 70px); /* Subtract label width and margin from input width */
+    max-width: 100px;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    border: 1px solid #7A7C80; /* Add a border to input boxes */
+    border-radius: 4px; /* Optional: adds a slight border radius */
+    background-color: #1c1e20; /* Background color of the input */
+    color: #fff; /* Text color */
+}
+
+.custom-input {
+    width: calc(100% - 70px); /* Subtract label width and margin from input width */
+    max-width: 100px;
+    padding: 13px;
+    margin: 5px 0;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    border: 1px solid #7A7C80; /* Add a border to input boxes */
+    border-radius: 4px; /* Optional: adds a slight border radius */
+    background-color: #1c1e20; /* Background color of the input */
+    color: #fff; /* Text color */
+}
+
 /* animations / utilities */
 .section-2 a:hover{
     font-size: 1.3rem;
@@ -82,14 +130,30 @@ a{
     transition: 0.3s;
 }
 
-.airlines-list{
-    padding-top: 10vh;
-    width: 70%;
+#airlines-list{
+    padding-top: 1vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+#airlines-list li{
+    padding: 3px;
 }
 
 .white:hover{
     position: relative;
     padding-left: 10px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
 }
 
 /* media queres */

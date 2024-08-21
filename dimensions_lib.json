@@ -1,6 +1,6 @@
 [
     {
-        "airline": "Easy Jet",
+        "airline": "EasyJet",
         "dimensions": {
             "unit": "cm",
             "height": 45,
@@ -24,6 +24,24 @@
             "height": 55,
             "width": 40,
             "depth": 25
+        }
+    },
+    {
+        "airline": "Wizz Air",
+        "dimensions": {
+            "unit": "cm",
+            "height": 40,
+            "width": 30,
+            "depth": 20
+        }
+    },
+    {
+        "airline": "Sata",
+        "dimensions": {
+            "unit": "cm",
+            "height": 55,
+            "width": 40,
+            "depth": 20
         }
     }
 ]
