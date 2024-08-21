@@ -43,5 +43,77 @@
             "width": 40,
             "depth": 20
         }
+    },
+    {
+        "airline": "Swiss",
+        "dimensions": {
+            "unit": "cm",
+            "height": 55,
+            "width": 40,
+            "depth": 23
+        }
+    },
+    {
+        "airline": "Lufthansa",
+        "dimensions": {
+            "unit": "cm",
+            "height": 55,
+            "width": 40,
+            "depth": 23
+        }
+    },
+    {
+        "airline": "Delta",
+        "dimensions": {
+            "unit": "cm",
+            "height": 56,
+            "width": 35,
+            "depth": 23
+        }
+    },
+    {
+        "airline": "American",
+        "dimensions": {
+            "unit": "cm",
+            "height": 56,
+            "width": 36,
+            "depth": 23
+        }
+    },
+    {
+        "airline": "United",
+        "dimensions": {
+            "unit": "cm",
+            "height": 56,
+            "width": 35,
+            "depth": 23
+        }
+    },
+    {
+        "airline": "Air France",
+        "dimensions": {
+            "unit": "cm",
+            "height": 55,
+            "width": 35,
+            "depth": 25
+        }
+    },
+    {
+        "airline": "Turkish",
+        "dimensions": {
+            "unit": "cm",
+            "height": 55,
+            "width": 40,
+            "depth": 23
+        }
+    },
+    {
+        "airline": "Air Canada",
+        "dimensions": {
+            "unit": "cm",
+            "height": 55,
+            "width": 40,
+            "depth": 23
+        }
     }
 ]
