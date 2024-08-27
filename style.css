@@ -1,17 +1,6 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.grid-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%; /* Add this line */
-}
-
-.grid-2{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -24,14 +13,14 @@ h2,.white{
     color: #fff;
 }
 
-a{
-    color: #7A7C80;
-    text-decoration: none;
-}
-/* section 1 */
 .section-1{
     padding-top: 10vh;
     text-align: center;
+}
+
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
 }
 
 .section-1 p{
@@ -40,43 +29,44 @@ a{
     margin:0;
 }
 
-.section-1 h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
+.section-1 a{
+    font-size: 1.3rem;
+    padding: 10px;
+    color: #7A7C80;
+    text-decoration: none;
 }
 
-.section-1 a{
-    font-size: 1.5rem;
-    padding: 10px;
+.section-1 a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
 }
-/* section 2 */
+
 .section-2{
-    padding-top: 1vh;
-    padding-left: 25vh;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-column {
+    grid-column: 1;
+    padding-left: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column {
+    grid-column: 2;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
 }
 
 .section-2 h2{
     font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-
-.section-2 p{
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin:0;
-}
-
-.section-2 a{
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
-    padding-left: 0;
-    width: 100px;
 }
 
 .section-2 select {
-    width: 10%;
+    width: 20%;
     max-width: 400px;
     padding: 8px;
     margin: 5px 0;
@@ -106,32 +96,6 @@ a{
     color: #fff; /* Text color */
 }
 
-.custom-input {
-    width: calc(100% - 70px); /* Subtract label width and margin from input width */
-    max-width: 100px;
-    padding: 13px;
-    margin: 5px 0;
-    box-sizing: border-box; /* Ensures padding is included in width */
-    border: 1px solid #7A7C80; /* Add a border to input boxes */
-    border-radius: 4px; /* Optional: adds a slight border radius */
-    background-color: #1c1e20; /* Background color of the input */
-    color: #fff; /* Text color */
-}
-
-/* animations / utilities */
-.section-2 a:hover{
-    font-size: 1.3rem;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.section-1 a:hover{
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 #airlines-list{
     padding-top: 1vh;
     padding-left: 5vh;
@@ -151,25 +115,12 @@ a{
 
 footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
     padding: 1px;
 }
 
-/* media queres */
-@media(max-width:780px){
-    .grid-2{
-        grid-template-columns: 1fr;
-    }
-    .section-1{
-        padding:0;
-        padding-top: 5rem;
-    }
-    .section-2{
-        padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
-    }
+footer a {
+    color: #fff;
 }
