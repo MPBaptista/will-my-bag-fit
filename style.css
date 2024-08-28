@@ -66,21 +66,21 @@ h2,.white{
 
 .section-2 label {
     display: inline-block;
-    width: 70px; /* Fixed width to ensure consistent alignment */
-    text-align: right; /* Align label text to the right */
-    margin-right: 10px; /* Space between label and input */
+    width: 70px;
+    text-align: right;
+    margin-right: 10px;
 }
 
 .section-2 input {
-    width: calc(100% - 70px); /* Subtract label width and margin from input width */
+    width: calc(100% - 70px);
     max-width: 100px;
     padding: 8px;
     margin: 5px 0;
-    box-sizing: border-box; /* Ensures padding is included in width */
-    border: 1px solid #7A7C80; /* Add a border to input boxes */
-    border-radius: 4px; /* Optional: adds a slight border radius */
-    background-color: #1c1e20; /* Background color of the input */
-    color: #fff; /* Text color */
+    box-sizing: border-box;
+    border: 1px solid #7A7C80;
+    border-radius: 4px;
+    background-color: #1c1e20;
+    color: #fff;
 }
 
 #airlines-list{
